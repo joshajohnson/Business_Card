@@ -1,0 +1,30 @@
+Source:,business_card_board.sch,,
+Date:,22/06/2018 20:15,,
+Tool:,Eeschema 4.0.7,,
+Component Count:,24,,
+Ref,Value,Footprint,Datasheet
+BT1,Battery_Cell,CR2032 Custom PCB Cutout/CopperPour,
+C1,0.1u,Capacitors_SMD:C_0805,http://au.element14.com/multicomp/mc0805b104m160ct/ceramic-capacitor-0-1uf-16v-x7r/dp/1708714?st=capacitor%20ceramic%20smd
+D1,LED,business_card_footprints:LED_1206_NO_REFDES,Home/Aliexpress (mixed pack)
+D2,LED,business_card_footprints:LED_1206_NO_REFDES,
+D3,LED,business_card_footprints:LED_1206_NO_REFDES,
+D4,LED,business_card_footprints:LED_1206_NO_REFDES,
+D5,LED,business_card_footprints:LED_1206_NO_REFDES,
+D6,LED,business_card_footprints:LED_1206_NO_REFDES,
+D7,LED,business_card_footprints:LED_1206_NO_REFDES,
+D8,LED,business_card_footprints:LED_1206_NO_REFDES,
+D9,LED,business_card_footprints:LED_1206_NO_REFDES,
+D10,LED,business_card_footprints:LED_1206_NO_REFDES,
+J1,PICKit3_Programmer,business_card_footprints:Pin_Header_Straight_1x06_Pitch2.54mm_SMD,SMD Pads on Board
+R1,10k,Resistors_SMD:R_0805,http://au.element14.com/multicomp/mc0805s8f1002t5e/res-thick-film-10k-1-0-125w-0805/dp/1632457
+R2,10k,Resistors_SMD:R_0805,
+R3,50R,Resistors_SMD:R_0805,http://au.element14.com/multicomp/mc0805s8f499jt5e/res-thick-film-49r9-1-0-125w-0805/dp/1632494
+R4,50R,Resistors_SMD:R_0805,
+R5,50R,Resistors_SMD:R_0805,
+R6,50R,Resistors_SMD:R_0805,
+R7,50R,Resistors_SMD:R_0805,
+R8,50R,Resistors_SMD:R_0805,
+SW1,SW_Push,business_card_footprints:KSEK43GLFS_NoREFDES,http://au.element14.com/c-k-components/ksek43g-lfs/tactile-switch-spst-0-05a-32vdc/dp/2435308
+SW2,SW_Push,business_card_footprints:KSEK43GLFS_NoREFDES,
+U1,PIC12F1822,SMD_Packages:SOIC-8-N,http://au.element14.com/microchip/pic12f1822-i-sn/mcu-8bit-pic12-32mhz-soic-8/dp/1971857?st=pic12f1822
+MAY SWAP for ^,PIC12F617,,http://au.element14.com/microchip/pic12f617-i-sn/mcu-8bit-pic12-20mhz-soic-8/dp/1778438?st=pic12f
