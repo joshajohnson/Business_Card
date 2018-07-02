@@ -24,28 +24,27 @@ void main() {
     PORTA = 0;     // Initial value of port A bits OFF
     WPUA = 0;       // Disable internal pullups
     
-    unsigned char i = 1; 
+    static const unsigned char PIN_HIGH[11]	   = {0,1,1,2,2,5,1,5,0,2,7};
+    static const unsigned char PIN_LOW[11]	   = {1,0,2,1,5,2,5,1,2,0,0};
     
-    static const unsigned char PIN_HIGH[11]	   = {7,0,1,1,2,2,5,1,5,0,2};
-    static const unsigned char PIN_LOW[11]	   = {0,1,0,2,1,5,2,5,1,2,0};
+    int number = 135;
+    int i = 0;
     
     while(1){
-        TRISA = 0xFF & ~(1<<PIN_LOW[i]|1<<PIN_HIGH[i]);
-        PORTA = (1<<PIN_HIGH[i]);
         
-        if (PORTAbits.RA4 == 0) 
+        for(i = 0; i < 8; i++)
         {
-            i++;
-            __delay_ms(200);
+            int bitOn = ((number >> i) & 1);
+            
+            if (bitOn)
+            {
+            TRISA &= ~(1<<PIN_LOW[i]|1<<PIN_HIGH[i]);
+            PORTA = 0 | (1<<PIN_HIGH[i]);
+            }
+            
+            __delay_ms(1);
+            
         }
-        
-        if (PORTAbits.RA3 == 0) 
-        {
-            i--;
-            __delay_ms(200);
-        }
-        if (i > 10) i = 0;
-        
      
        
     }
