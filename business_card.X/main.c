@@ -22,6 +22,8 @@ void main() {
     ADCON0 = 0;    // Disable ADC module
     TRISA = 0;     // All Output
     PORTA = 0;     // Initial value of port A bits
+    WPUA = 0;
+    
     
     while(1){
         // LED 0 (Binary 1)
@@ -38,7 +40,7 @@ void main() {
         __delay_ms(500);
         // LED 3 (Binary 8)
         TRISA = (1<<0)|(1<<5); // High Z
-        PORTA = 0b00000100;
+        PORTA = 0b00000101;
         __delay_ms(500);
         // LED 4 (Binary 16)
         TRISA = (1<<0)|(1<<1); // High Z
@@ -57,14 +59,14 @@ void main() {
         PORTA = 0b00100000;
         __delay_ms(500);     
        
-//        // LED 8 (Single Step)
-//        TRISA = (1<<1)|(1<<5); // High Z
-//        PORTA = 0b00000001;
-//        __delay_ms(500);
-//        // LED 9 (Clocked Count)
-//        TRISA = (1<<1)|(1<<5); // High Z
-//        PORTA = 0b00000100;
-//        __delay_ms(500);    
+        // LED 8 (Single Step)
+        TRISA = (1<<1)|(1<<5); // High Z
+        PORTA = 0b00000001;
+        __delay_ms(500);
+        // LED 9 (Clocked Count)
+        TRISA = (1<<1)|(1<<5); // High Z
+        PORTA = 0b00000100;
+        __delay_ms(500);    
         
         
     }

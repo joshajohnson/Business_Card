@@ -23,8 +23,10 @@
 [v _ADCON0 ADCON0 `VEuc  1 e 1 @157 ]
 "2630
 [v _ANSELA ANSELA `VEuc  1 e 1 @396 ]
+"3186
+[v _WPUA WPUA `VEuc  1 e 1 @524 ]
 "19 C:\Users\jonno\Dropbox\Projects\Business_Card\business_card.X\main.c
 [v _main main `(v  1 e 1 0 ]
 {
-"71
+"73
 } 0
