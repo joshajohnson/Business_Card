@@ -3032,6 +3032,25 @@ extern __bank0 __bit __timeout;
 #pragma config FOSC = INTOSC
 
 
+volatile int number = 0;
+volatile int j = 0;
+
+
+void interrupt isr(void)
+{
+if((T0IE==1) && (T0IF==1))
+{
+T0IF = 0;
+j++;
+
+if (j == 8)
+{
+j = 0;
+number++;
+}
+}
+}
+
 void main() {
 OSCCON = 0xF0;
 ANSELA = 0;
@@ -3043,18 +3062,25 @@ WPUA = 0;
 static const unsigned char PIN_HIGH[11] = {0,1,1,2,2,5,1,5,0,2,7};
 static const unsigned char PIN_LOW[11] = {1,0,2,1,5,2,5,1,2,0,0};
 
-int number = 135;
-int i = 0;
 
-while(1){
 
-for(i = 0; i < 8; i++)
+
+OPTION_REG=0b10000111;
+INTCON=0b10100000;
+
+
+
+while(1)
+{
+
+for(int i = 0; i <= 7; i++)
 {
 int bitOn = ((number >> i) & 1);
-TRISA = 0xFF & ~(1<<PIN_LOW[i]|1<<PIN_HIGH[i]);
+PORTA = 0;
 if (bitOn)
 {
-PORTA = 0 | (1<<PIN_HIGH[i]);
+TRISA = 0xFF & ~(1<<PIN_LOW[i]|1<<PIN_HIGH[i]);
+PORTA = (1<<PIN_HIGH[i]);
 }
 _delay((unsigned long)((1)*(40000000/4000.0)));
 
