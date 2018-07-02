@@ -13,61 +13,40 @@
 #pragma config MCLRE = OFF // MCLR Pin Function Select->MCLR/VPP pin function is digital input
 #pragma config WDTE = OFF // Watchdog Timer Enable->WDT disabled
 #pragma config LVP = OFF // Low-Voltage Programming Enable->High-voltage on MCLR/VPP must be used for programming
-#pragma config FOSC = INTOSC // Internal Oscilator
+#pragma config FOSC = INTOSC // Internal Oscilator (Enables RA5 to be used as an input.)
 
 #define _XTAL_FREQ 40000000  // Number is not correct, need to look into
 void main() {
     OSCCON = 0xF0; // Internal oscillator 8MHz and PLL enabled
     ANSELA = 0;    // All I/O pins are configured as digital
     ADCON0 = 0;    // Disable ADC module
-    TRISA = 0;     // All Output
-    PORTA = 0;     // Initial value of port A bits
-    WPUA = 0;
+    TRISA = (1<<3)|(1<<4);// RA3, RA4 Input, others output
+    PORTA = 0;     // Initial value of port A bits OFF
+    WPUA = 0;       // Disable internal pullups
     
+    unsigned char i = 1; 
+    
+    static const unsigned char PIN_HIGH[11]	   = {7,0,1,1,2,2,5,1,5,0,2};
+    static const unsigned char PIN_LOW[11]	   = {0,1,0,2,1,5,2,5,1,2,0};
     
     while(1){
-        // LED 0 (Binary 1)
-        TRISA = (1<<2)|(1<<5); // High Z
-        PORTA = 0b00000001;
-        __delay_ms(500);
-        // LED 1 (Binary 2)
-        TRISA = (1<<2)|(1<<5); // High Z
-        PORTA = 0b00000010;
-        __delay_ms(500);
-        // LED 2 (Binary 4)
-        TRISA = (1<<0)|(1<<5); // High Z
-        PORTA = 0b00000010;
-        __delay_ms(500);
-        // LED 3 (Binary 8)
-        TRISA = (1<<0)|(1<<5); // High Z
-        PORTA = 0b00000101;
-        __delay_ms(500);
-        // LED 4 (Binary 16)
-        TRISA = (1<<0)|(1<<1); // High Z
-        PORTA = 0b00000100;
-        __delay_ms(500);
-        // LED 5 (Binary 32)
-        TRISA = (1<<0)|(1<<1); // High Z
-        PORTA = 0b00100000;
-        __delay_ms(500);
-        // LED 6 (Binary 64)
-        TRISA = (1<<0)|(1<<2); // High Z
-        PORTA = 0b00000010;
-        __delay_ms(500);
-        // LED 7 (Binary 128)
-        TRISA = (1<<0)|(1<<2); // High Z
-        PORTA = 0b00100000;
-        __delay_ms(500);     
+        TRISA = 0xFF & ~(1<<PIN_LOW[i]|1<<PIN_HIGH[i]);
+        PORTA = (1<<PIN_HIGH[i]);
+        
+        if (PORTAbits.RA4 == 0) 
+        {
+            i++;
+            __delay_ms(200);
+        }
+        
+        if (PORTAbits.RA3 == 0) 
+        {
+            i--;
+            __delay_ms(200);
+        }
+        if (i > 10) i = 0;
+        
+     
        
-        // LED 8 (Single Step)
-        TRISA = (1<<1)|(1<<5); // High Z
-        PORTA = 0b00000001;
-        __delay_ms(500);
-        // LED 9 (Clocked Count)
-        TRISA = (1<<1)|(1<<5); // High Z
-        PORTA = 0b00000100;
-        __delay_ms(500);    
-        
-        
     }
 }
