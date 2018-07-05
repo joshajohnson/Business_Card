@@ -11,24 +11,24 @@
 # All addresses and the length are given in unqualified hexadecimal
 # in delta units.  Any other numeric values are decimal.
 %PSECTS
-$C:\Users\jonno\AppData\Local\Temp\snf0.obj
+$C:\Users\JOSHJO~1\AppData\Local\Temp\svc8.obj
 reset_vec CODE 0 0 0 1 2
 end_init CODE 0 62 62 1 2
 config CONFIG 0 8007 8007 2 2
 $dist/default/production\business_card.X.production.obj
 cinit CODE 0 63 63 12 2
-text1 CODE 0 148 148 3B 2
-idataCOMMON CODE 0 1A6 1A6 3 2
-maintext CODE 0 75 75 D3 2
+text1 CODE 0 147 147 44 2
+idataCOMMON CODE 0 1AE 1AE 3 2
+maintext CODE 0 75 75 D2 2
 cstackCOMMON COMMON 1 70 70 5 1
 cstackBANK0 BANK0 1 20 20 F 1
-stringtext1 STRCODE 0 183 183 D 2
-stringtext2 STRCODE 0 1AB 1AB 1 2
-stringtext3 STRCODE 0 190 190 B 2
-stringtext4 STRCODE 0 19B 19B B 2
+stringtext1 STRCODE 0 18B 18B D 2
+stringtext2 STRCODE 0 1B3 1B3 1 2
+stringtext3 STRCODE 0 198 198 B 2
+stringtext4 STRCODE 0 1A3 1A3 B 2
 intentry CODE 0 4 4 5E 2
 bssBANK0 BANK0 1 2F 2F 2 1
-idataBANK0 CODE 0 1A9 1A9 2 2
+idataBANK0 CODE 0 1B1 1B1 2 2
 dataBANK0 BANK0 1 31 31 2 1
 dataCOMMON COMMON 1 78 78 3 1
 bssCOMMON COMMON 1 75 75 3 1
@@ -43,9 +43,9 @@ RAM A0-BF 1
 BANK0 33-6F 1
 BANK1 A0-BF 1
 CONST 1-3 2
-CONST 1AC-7FF 2
+CONST 1B4-7FF 2
 ENTRY 1-3 2
-ENTRY 1AC-7FF 2
+ENTRY 1B4-7FF 2
 IDLOC 8000-8003 2
 SFR10 500-56F 1
 SFR11 580-5EF 1
@@ -71,7 +71,7 @@ SFR30 F00-F6F 1
 SFR31 F80-FEF 1
 STACK 2013-206F 1
 CODE 1-3 2
-CODE 1AC-7FF 2
+CODE 1B4-7FF 2
 SFR0 0-1F 1
 SFR1 80-9F 1
 SFR2 100-16F 1
@@ -86,9 +86,9 @@ BIGRAM 2000-206F 1
 COMMON 7B-7D 1
 EEDATA F000-F0FF 2
 STRCODE 1-3 2
-STRCODE 1AC-7FF 2
+STRCODE 1B4-7FF 2
 STRING 1-3 2
-STRING 1AC-7FF 2
+STRING 1B4-7FF 2
 # %LINETAB Section
 # This section enumerates the file/line to address mappings.
 # The beginning of the section is indicated by %LINETAB.
@@ -103,92 +103,95 @@ STRING 1AC-7FF 2
 # All other numeric values are in decimal.
 %LINETAB
 $dist/default/production\business_card.X.production.obj
-63 cinit CODE >416:C:\Users\jonno\AppData\Local\Temp\snf0.
-63 cinit CODE >419:C:\Users\jonno\AppData\Local\Temp\snf0.
-63 cinit CODE >480:C:\Users\jonno\AppData\Local\Temp\snf0.
-64 cinit CODE >481:C:\Users\jonno\AppData\Local\Temp\snf0.
-65 cinit CODE >482:C:\Users\jonno\AppData\Local\Temp\snf0.
-66 cinit CODE >483:C:\Users\jonno\AppData\Local\Temp\snf0.
-67 cinit CODE >484:C:\Users\jonno\AppData\Local\Temp\snf0.
-68 cinit CODE >485:C:\Users\jonno\AppData\Local\Temp\snf0.
-69 cinit CODE >489:C:\Users\jonno\AppData\Local\Temp\snf0.
-6A cinit CODE >490:C:\Users\jonno\AppData\Local\Temp\snf0.
-6B cinit CODE >491:C:\Users\jonno\AppData\Local\Temp\snf0.
-6C cinit CODE >492:C:\Users\jonno\AppData\Local\Temp\snf0.
-6D cinit CODE >497:C:\Users\jonno\AppData\Local\Temp\snf0.
-6E cinit CODE >498:C:\Users\jonno\AppData\Local\Temp\snf0.
-6F cinit CODE >499:C:\Users\jonno\AppData\Local\Temp\snf0.
-70 cinit CODE >503:C:\Users\jonno\AppData\Local\Temp\snf0.
-71 cinit CODE >504:C:\Users\jonno\AppData\Local\Temp\snf0.
-72 cinit CODE >510:C:\Users\jonno\AppData\Local\Temp\snf0.
-72 cinit CODE >512:C:\Users\jonno\AppData\Local\Temp\snf0.
-73 cinit CODE >513:C:\Users\jonno\AppData\Local\Temp\snf0.
-74 cinit CODE >514:C:\Users\jonno\AppData\Local\Temp\snf0.
-4 intentry CODE >27:C:\Users\jonno\Dropbox\Projects\Business_Card\business_card.X\main.c
-9 intentry CODE >30:C:\Users\jonno\Dropbox\Projects\Business_Card\business_card.X\main.c
-C intentry CODE >32:C:\Users\jonno\Dropbox\Projects\Business_Card\business_card.X\main.c
-D intentry CODE >40:C:\Users\jonno\Dropbox\Projects\Business_Card\business_card.X\main.c
-11 intentry CODE >42:C:\Users\jonno\Dropbox\Projects\Business_Card\business_card.X\main.c
-12 intentry CODE >43:C:\Users\jonno\Dropbox\Projects\Business_Card\business_card.X\main.c
-16 intentry CODE >46:C:\Users\jonno\Dropbox\Projects\Business_Card\business_card.X\main.c
-1D intentry CODE >47:C:\Users\jonno\Dropbox\Projects\Business_Card\business_card.X\main.c
-21 intentry CODE >56:C:\Users\jonno\Dropbox\Projects\Business_Card\business_card.X\main.c
-25 intentry CODE >58:C:\Users\jonno\Dropbox\Projects\Business_Card\business_card.X\main.c
-28 intentry CODE >62:C:\Users\jonno\Dropbox\Projects\Business_Card\business_card.X\main.c
-31 intentry CODE >63:C:\Users\jonno\Dropbox\Projects\Business_Card\business_card.X\main.c
-33 intentry CODE >65:C:\Users\jonno\Dropbox\Projects\Business_Card\business_card.X\main.c
-3C intentry CODE >66:C:\Users\jonno\Dropbox\Projects\Business_Card\business_card.X\main.c
-3E intentry CODE >69:C:\Users\jonno\Dropbox\Projects\Business_Card\business_card.X\main.c
-4E intentry CODE >70:C:\Users\jonno\Dropbox\Projects\Business_Card\business_card.X\main.c
-5E intentry CODE >74:C:\Users\jonno\Dropbox\Projects\Business_Card\business_card.X\main.c
-148 text1 CODE >78:C:\Users\jonno\Dropbox\Projects\Business_Card\business_card.X\main.c
-149 text1 CODE >86:C:\Users\jonno\Dropbox\Projects\Business_Card\business_card.X\main.c
-16C text1 CODE >87:C:\Users\jonno\Dropbox\Projects\Business_Card\business_card.X\main.c
-17E text1 CODE >88:C:\Users\jonno\Dropbox\Projects\Business_Card\business_card.X\main.c
-182 text1 CODE >89:C:\Users\jonno\Dropbox\Projects\Business_Card\business_card.X\main.c
-75 maintext CODE >91:C:\Users\jonno\Dropbox\Projects\Business_Card\business_card.X\main.c
-75 maintext CODE >94:C:\Users\jonno\Dropbox\Projects\Business_Card\business_card.X\main.c
-78 maintext CODE >95:C:\Users\jonno\Dropbox\Projects\Business_Card\business_card.X\main.c
-7A maintext CODE >96:C:\Users\jonno\Dropbox\Projects\Business_Card\business_card.X\main.c
-7C maintext CODE >97:C:\Users\jonno\Dropbox\Projects\Business_Card\business_card.X\main.c
-7E maintext CODE >98:C:\Users\jonno\Dropbox\Projects\Business_Card\business_card.X\main.c
-80 maintext CODE >99:C:\Users\jonno\Dropbox\Projects\Business_Card\business_card.X\main.c
-82 maintext CODE >102:C:\Users\jonno\Dropbox\Projects\Business_Card\business_card.X\main.c
-85 maintext CODE >103:C:\Users\jonno\Dropbox\Projects\Business_Card\business_card.X\main.c
-87 maintext CODE >110:C:\Users\jonno\Dropbox\Projects\Business_Card\business_card.X\main.c
-89 maintext CODE >111:C:\Users\jonno\Dropbox\Projects\Business_Card\business_card.X\main.c
-8B maintext CODE >112:C:\Users\jonno\Dropbox\Projects\Business_Card\business_card.X\main.c
-8C maintext CODE >115:C:\Users\jonno\Dropbox\Projects\Business_Card\business_card.X\main.c
-8D maintext CODE >116:C:\Users\jonno\Dropbox\Projects\Business_Card\business_card.X\main.c
-8E maintext CODE >117:C:\Users\jonno\Dropbox\Projects\Business_Card\business_card.X\main.c
-8F maintext CODE >118:C:\Users\jonno\Dropbox\Projects\Business_Card\business_card.X\main.c
-90 maintext CODE >119:C:\Users\jonno\Dropbox\Projects\Business_Card\business_card.X\main.c
-91 maintext CODE >120:C:\Users\jonno\Dropbox\Projects\Business_Card\business_card.X\main.c
-92 maintext CODE >130:C:\Users\jonno\Dropbox\Projects\Business_Card\business_card.X\main.c
-9D maintext CODE >131:C:\Users\jonno\Dropbox\Projects\Business_Card\business_card.X\main.c
-A7 maintext CODE >133:C:\Users\jonno\Dropbox\Projects\Business_Card\business_card.X\main.c
-B1 maintext CODE >134:C:\Users\jonno\Dropbox\Projects\Business_Card\business_card.X\main.c
-BB maintext CODE >136:C:\Users\jonno\Dropbox\Projects\Business_Card\business_card.X\main.c
-BF maintext CODE >137:C:\Users\jonno\Dropbox\Projects\Business_Card\business_card.X\main.c
-C3 maintext CODE >140:C:\Users\jonno\Dropbox\Projects\Business_Card\business_card.X\main.c
-DA maintext CODE >143:C:\Users\jonno\Dropbox\Projects\Business_Card\business_card.X\main.c
-DD maintext CODE >145:C:\Users\jonno\Dropbox\Projects\Business_Card\business_card.X\main.c
-E6 maintext CODE >146:C:\Users\jonno\Dropbox\Projects\Business_Card\business_card.X\main.c
-EA maintext CODE >152:C:\Users\jonno\Dropbox\Projects\Business_Card\business_card.X\main.c
-ED maintext CODE >154:C:\Users\jonno\Dropbox\Projects\Business_Card\business_card.X\main.c
-F2 maintext CODE >155:C:\Users\jonno\Dropbox\Projects\Business_Card\business_card.X\main.c
-F9 maintext CODE >156:C:\Users\jonno\Dropbox\Projects\Business_Card\business_card.X\main.c
-F9 maintext CODE >161:C:\Users\jonno\Dropbox\Projects\Business_Card\business_card.X\main.c
-FC maintext CODE >163:C:\Users\jonno\Dropbox\Projects\Business_Card\business_card.X\main.c
-104 maintext CODE >164:C:\Users\jonno\Dropbox\Projects\Business_Card\business_card.X\main.c
-10F maintext CODE >166:C:\Users\jonno\Dropbox\Projects\Business_Card\business_card.X\main.c
-11A maintext CODE >167:C:\Users\jonno\Dropbox\Projects\Business_Card\business_card.X\main.c
-11E maintext CODE >174:C:\Users\jonno\Dropbox\Projects\Business_Card\business_card.X\main.c
-123 maintext CODE >176:C:\Users\jonno\Dropbox\Projects\Business_Card\business_card.X\main.c
-12F maintext CODE >177:C:\Users\jonno\Dropbox\Projects\Business_Card\business_card.X\main.c
-136 maintext CODE >174:C:\Users\jonno\Dropbox\Projects\Business_Card\business_card.X\main.c
-13F maintext CODE >180:C:\Users\jonno\Dropbox\Projects\Business_Card\business_card.X\main.c
-147 maintext CODE >122:C:\Users\jonno\Dropbox\Projects\Business_Card\business_card.X\main.c
+63 cinit CODE >416:C:\Users\JOSHJO~1\AppData\Local\Temp\svc8.
+63 cinit CODE >419:C:\Users\JOSHJO~1\AppData\Local\Temp\svc8.
+63 cinit CODE >480:C:\Users\JOSHJO~1\AppData\Local\Temp\svc8.
+64 cinit CODE >481:C:\Users\JOSHJO~1\AppData\Local\Temp\svc8.
+65 cinit CODE >482:C:\Users\JOSHJO~1\AppData\Local\Temp\svc8.
+66 cinit CODE >483:C:\Users\JOSHJO~1\AppData\Local\Temp\svc8.
+67 cinit CODE >484:C:\Users\JOSHJO~1\AppData\Local\Temp\svc8.
+68 cinit CODE >485:C:\Users\JOSHJO~1\AppData\Local\Temp\svc8.
+69 cinit CODE >489:C:\Users\JOSHJO~1\AppData\Local\Temp\svc8.
+6A cinit CODE >490:C:\Users\JOSHJO~1\AppData\Local\Temp\svc8.
+6B cinit CODE >491:C:\Users\JOSHJO~1\AppData\Local\Temp\svc8.
+6C cinit CODE >492:C:\Users\JOSHJO~1\AppData\Local\Temp\svc8.
+6D cinit CODE >497:C:\Users\JOSHJO~1\AppData\Local\Temp\svc8.
+6E cinit CODE >498:C:\Users\JOSHJO~1\AppData\Local\Temp\svc8.
+6F cinit CODE >499:C:\Users\JOSHJO~1\AppData\Local\Temp\svc8.
+70 cinit CODE >503:C:\Users\JOSHJO~1\AppData\Local\Temp\svc8.
+71 cinit CODE >504:C:\Users\JOSHJO~1\AppData\Local\Temp\svc8.
+72 cinit CODE >510:C:\Users\JOSHJO~1\AppData\Local\Temp\svc8.
+72 cinit CODE >512:C:\Users\JOSHJO~1\AppData\Local\Temp\svc8.
+73 cinit CODE >513:C:\Users\JOSHJO~1\AppData\Local\Temp\svc8.
+74 cinit CODE >514:C:\Users\JOSHJO~1\AppData\Local\Temp\svc8.
+4 intentry CODE >27:C:\Users\Josh Johnson\Dropbox\Projects\Business_Card\business_card.X\main.c
+9 intentry CODE >30:C:\Users\Josh Johnson\Dropbox\Projects\Business_Card\business_card.X\main.c
+C intentry CODE >32:C:\Users\Josh Johnson\Dropbox\Projects\Business_Card\business_card.X\main.c
+D intentry CODE >40:C:\Users\Josh Johnson\Dropbox\Projects\Business_Card\business_card.X\main.c
+11 intentry CODE >42:C:\Users\Josh Johnson\Dropbox\Projects\Business_Card\business_card.X\main.c
+12 intentry CODE >43:C:\Users\Josh Johnson\Dropbox\Projects\Business_Card\business_card.X\main.c
+16 intentry CODE >46:C:\Users\Josh Johnson\Dropbox\Projects\Business_Card\business_card.X\main.c
+1D intentry CODE >48:C:\Users\Josh Johnson\Dropbox\Projects\Business_Card\business_card.X\main.c
+21 intentry CODE >57:C:\Users\Josh Johnson\Dropbox\Projects\Business_Card\business_card.X\main.c
+25 intentry CODE >59:C:\Users\Josh Johnson\Dropbox\Projects\Business_Card\business_card.X\main.c
+28 intentry CODE >63:C:\Users\Josh Johnson\Dropbox\Projects\Business_Card\business_card.X\main.c
+31 intentry CODE >64:C:\Users\Josh Johnson\Dropbox\Projects\Business_Card\business_card.X\main.c
+33 intentry CODE >66:C:\Users\Josh Johnson\Dropbox\Projects\Business_Card\business_card.X\main.c
+3C intentry CODE >67:C:\Users\Josh Johnson\Dropbox\Projects\Business_Card\business_card.X\main.c
+3E intentry CODE >70:C:\Users\Josh Johnson\Dropbox\Projects\Business_Card\business_card.X\main.c
+4E intentry CODE >71:C:\Users\Josh Johnson\Dropbox\Projects\Business_Card\business_card.X\main.c
+5E intentry CODE >74:C:\Users\Josh Johnson\Dropbox\Projects\Business_Card\business_card.X\main.c
+147 text1 CODE >78:C:\Users\Josh Johnson\Dropbox\Projects\Business_Card\business_card.X\main.c
+148 text1 CODE >86:C:\Users\Josh Johnson\Dropbox\Projects\Business_Card\business_card.X\main.c
+16B text1 CODE >87:C:\Users\Josh Johnson\Dropbox\Projects\Business_Card\business_card.X\main.c
+17D text1 CODE >88:C:\Users\Josh Johnson\Dropbox\Projects\Business_Card\business_card.X\main.c
+181 text1 CODE >90:C:\Users\Josh Johnson\Dropbox\Projects\Business_Card\business_card.X\main.c
+184 text1 CODE >91:C:\Users\Josh Johnson\Dropbox\Projects\Business_Card\business_card.X\main.c
+186 text1 CODE >92:C:\Users\Josh Johnson\Dropbox\Projects\Business_Card\business_card.X\main.c
+18A text1 CODE >94:C:\Users\Josh Johnson\Dropbox\Projects\Business_Card\business_card.X\main.c
+75 maintext CODE >96:C:\Users\Josh Johnson\Dropbox\Projects\Business_Card\business_card.X\main.c
+75 maintext CODE >100:C:\Users\Josh Johnson\Dropbox\Projects\Business_Card\business_card.X\main.c
+78 maintext CODE >101:C:\Users\Josh Johnson\Dropbox\Projects\Business_Card\business_card.X\main.c
+7A maintext CODE >102:C:\Users\Josh Johnson\Dropbox\Projects\Business_Card\business_card.X\main.c
+7C maintext CODE >103:C:\Users\Josh Johnson\Dropbox\Projects\Business_Card\business_card.X\main.c
+7E maintext CODE >104:C:\Users\Josh Johnson\Dropbox\Projects\Business_Card\business_card.X\main.c
+80 maintext CODE >105:C:\Users\Josh Johnson\Dropbox\Projects\Business_Card\business_card.X\main.c
+82 maintext CODE >108:C:\Users\Josh Johnson\Dropbox\Projects\Business_Card\business_card.X\main.c
+85 maintext CODE >109:C:\Users\Josh Johnson\Dropbox\Projects\Business_Card\business_card.X\main.c
+87 maintext CODE >116:C:\Users\Josh Johnson\Dropbox\Projects\Business_Card\business_card.X\main.c
+89 maintext CODE >117:C:\Users\Josh Johnson\Dropbox\Projects\Business_Card\business_card.X\main.c
+8B maintext CODE >118:C:\Users\Josh Johnson\Dropbox\Projects\Business_Card\business_card.X\main.c
+8C maintext CODE >121:C:\Users\Josh Johnson\Dropbox\Projects\Business_Card\business_card.X\main.c
+8D maintext CODE >122:C:\Users\Josh Johnson\Dropbox\Projects\Business_Card\business_card.X\main.c
+8E maintext CODE >123:C:\Users\Josh Johnson\Dropbox\Projects\Business_Card\business_card.X\main.c
+8F maintext CODE >124:C:\Users\Josh Johnson\Dropbox\Projects\Business_Card\business_card.X\main.c
+90 maintext CODE >125:C:\Users\Josh Johnson\Dropbox\Projects\Business_Card\business_card.X\main.c
+91 maintext CODE >126:C:\Users\Josh Johnson\Dropbox\Projects\Business_Card\business_card.X\main.c
+92 maintext CODE >135:C:\Users\Josh Johnson\Dropbox\Projects\Business_Card\business_card.X\main.c
+9D maintext CODE >136:C:\Users\Josh Johnson\Dropbox\Projects\Business_Card\business_card.X\main.c
+A7 maintext CODE >138:C:\Users\Josh Johnson\Dropbox\Projects\Business_Card\business_card.X\main.c
+B1 maintext CODE >139:C:\Users\Josh Johnson\Dropbox\Projects\Business_Card\business_card.X\main.c
+BB maintext CODE >141:C:\Users\Josh Johnson\Dropbox\Projects\Business_Card\business_card.X\main.c
+BF maintext CODE >142:C:\Users\Josh Johnson\Dropbox\Projects\Business_Card\business_card.X\main.c
+C3 maintext CODE >145:C:\Users\Josh Johnson\Dropbox\Projects\Business_Card\business_card.X\main.c
+DA maintext CODE >148:C:\Users\Josh Johnson\Dropbox\Projects\Business_Card\business_card.X\main.c
+DD maintext CODE >150:C:\Users\Josh Johnson\Dropbox\Projects\Business_Card\business_card.X\main.c
+E6 maintext CODE >151:C:\Users\Josh Johnson\Dropbox\Projects\Business_Card\business_card.X\main.c
+EA maintext CODE >157:C:\Users\Josh Johnson\Dropbox\Projects\Business_Card\business_card.X\main.c
+ED maintext CODE >159:C:\Users\Josh Johnson\Dropbox\Projects\Business_Card\business_card.X\main.c
+F2 maintext CODE >160:C:\Users\Josh Johnson\Dropbox\Projects\Business_Card\business_card.X\main.c
+F9 maintext CODE >161:C:\Users\Josh Johnson\Dropbox\Projects\Business_Card\business_card.X\main.c
+F9 maintext CODE >166:C:\Users\Josh Johnson\Dropbox\Projects\Business_Card\business_card.X\main.c
+FC maintext CODE >168:C:\Users\Josh Johnson\Dropbox\Projects\Business_Card\business_card.X\main.c
+104 maintext CODE >169:C:\Users\Josh Johnson\Dropbox\Projects\Business_Card\business_card.X\main.c
+10F maintext CODE >171:C:\Users\Josh Johnson\Dropbox\Projects\Business_Card\business_card.X\main.c
+11A maintext CODE >172:C:\Users\Josh Johnson\Dropbox\Projects\Business_Card\business_card.X\main.c
+11E maintext CODE >179:C:\Users\Josh Johnson\Dropbox\Projects\Business_Card\business_card.X\main.c
+124 maintext CODE >181:C:\Users\Josh Johnson\Dropbox\Projects\Business_Card\business_card.X\main.c
+130 maintext CODE >182:C:\Users\Josh Johnson\Dropbox\Projects\Business_Card\business_card.X\main.c
+137 maintext CODE >179:C:\Users\Josh Johnson\Dropbox\Projects\Business_Card\business_card.X\main.c
+13E maintext CODE >185:C:\Users\Josh Johnson\Dropbox\Projects\Business_Card\business_card.X\main.c
+146 maintext CODE >128:C:\Users\Josh Johnson\Dropbox\Projects\Business_Card\business_card.X\main.c
 # %SYMTAB Section
 # An enumeration of all symbols in the program.
 # The beginning of the section is indicated by %SYMTAB.
@@ -214,31 +217,31 @@ __Hstrings 0 0 ABS 0 strings -
 _T0IE 5D 0 ABS 0 - dist/default/production\business_card.X.production.obj
 _T0IF 5A 0 ABS 0 - dist/default/production\business_card.X.production.obj
 _WPUA 20C 0 ABS 0 - dist/default/production\business_card.X.production.obj
-___sp 0 0 STACK 2 stack C:\Users\jonno\AppData\Local\Temp\snf0.obj
+___sp 0 0 STACK 2 stack C:\Users\JOSHJO~1\AppData\Local\Temp\svc8.obj
 _main EA 0 CODE 0 maintext dist/default/production\business_card.X.production.obj
 btemp 7E 0 ABS 0 - dist/default/production\business_card.X.production.obj
-start C4 0 CODE 0 init C:\Users\jonno\AppData\Local\Temp\snf0.obj
+start C4 0 CODE 0 init C:\Users\JOSHJO~1\AppData\Local\Temp\svc8.obj
 __size_of_main 0 0 ABS 0 - dist/default/production\business_card.X.production.obj
 __HbssCOMMON 0 0 ABS 0 bssCOMMON -
 __LidataBANK0 0 0 ABS 0 idataBANK0 -
 __Hpowerup 0 0 CODE 0 powerup -
 __HdataCOMMON 0 0 ABS 0 dataCOMMON -
-__end_ofdisplayNumber@pinHigh 34C 0 STRCODE 0 stringtext4 dist/default/production\business_card.X.production.obj
-intlevel0 0 0 ENTRY 0 functab C:\Users\jonno\AppData\Local\Temp\snf0.obj
-intlevel1 0 0 ENTRY 0 functab C:\Users\jonno\AppData\Local\Temp\snf0.obj
-intlevel2 0 0 ENTRY 0 functab C:\Users\jonno\AppData\Local\Temp\snf0.obj
-intlevel3 0 0 ENTRY 0 functab C:\Users\jonno\AppData\Local\Temp\snf0.obj
-intlevel4 0 0 ENTRY 0 functab C:\Users\jonno\AppData\Local\Temp\snf0.obj
-intlevel5 0 0 ENTRY 0 functab C:\Users\jonno\AppData\Local\Temp\snf0.obj
+__end_ofdisplayNumber@pinHigh 35C 0 STRCODE 0 stringtext4 dist/default/production\business_card.X.production.obj
+intlevel0 0 0 ENTRY 0 functab C:\Users\JOSHJO~1\AppData\Local\Temp\svc8.obj
+intlevel1 0 0 ENTRY 0 functab C:\Users\JOSHJO~1\AppData\Local\Temp\svc8.obj
+intlevel2 0 0 ENTRY 0 functab C:\Users\JOSHJO~1\AppData\Local\Temp\svc8.obj
+intlevel3 0 0 ENTRY 0 functab C:\Users\JOSHJO~1\AppData\Local\Temp\svc8.obj
+intlevel4 0 0 ENTRY 0 functab C:\Users\JOSHJO~1\AppData\Local\Temp\svc8.obj
+intlevel5 0 0 ENTRY 0 functab C:\Users\JOSHJO~1\AppData\Local\Temp\svc8.obj
 __LbssCOMMON 0 0 ABS 0 bssCOMMON -
 wtemp0 7E 0 ABS 0 - dist/default/production\business_card.X.production.obj
 __Hfunctab 0 0 ENTRY 0 functab -
 __Hclrtext 0 0 ABS 0 clrtext -
-__pidataCOMMON 34C 0 CODE 0 idataCOMMON dist/default/production\business_card.X.production.obj
+__pidataCOMMON 35C 0 CODE 0 idataCOMMON dist/default/production\business_card.X.production.obj
 _ADCON0 9D 0 ABS 0 - dist/default/production\business_card.X.production.obj
 _ANSELA 18C 0 ABS 0 - dist/default/production\business_card.X.production.obj
 __LdataCOMMON 0 0 ABS 0 dataCOMMON -
-__end_of_buttonSampleThresh 358 0 STRCODE 0 stringtext2 dist/default/production\business_card.X.production.obj
+__end_of_buttonSampleThresh 368 0 STRCODE 0 stringtext2 dist/default/production\business_card.X.production.obj
 __Lmaintext 0 0 ABS 0 maintext -
 main@buttonBoth 24 0 BANK0 1 cstackBANK0 dist/default/production\business_card.X.production.obj
 _INTCON B 0 ABS 0 - dist/default/production\business_card.X.production.obj
@@ -246,12 +249,12 @@ _OPTION_REG 95 0 ABS 0 - dist/default/production\business_card.X.production.obj
 __LidataCOMMON 0 0 ABS 0 idataCOMMON -
 __CFG_MCLRE$OFF 0 0 ABS 0 - dist/default/production\business_card.X.production.obj
 start_initialization C6 0 CODE 0 cinit dist/default/production\business_card.X.production.obj
-_buttonSampleThresh 356 0 STRCODE 0 stringtext2 dist/default/production\business_card.X.production.obj
+_buttonSampleThresh 366 0 STRCODE 0 stringtext2 dist/default/production\business_card.X.production.obj
 _OSCCON 99 0 ABS 0 - dist/default/production\business_card.X.production.obj
 _buttonCountA 76 0 COMMON 1 bssCOMMON dist/default/production\business_card.X.production.obj
 _buttonCountB 75 0 COMMON 1 bssCOMMON dist/default/production\business_card.X.production.obj
 __pcstackBANK0 20 0 BANK0 1 cstackBANK0 dist/default/production\business_card.X.production.obj
-___int_sp 0 0 STACK 2 stack C:\Users\jonno\AppData\Local\Temp\snf0.obj
+___int_sp 0 0 STACK 2 stack C:\Users\JOSHJO~1\AppData\Local\Temp\svc8.obj
 __Hbank0 0 0 ABS 0 bank0 -
 __Hbank1 0 0 ABS 0 bank1 -
 __Hbank2 0 0 BANK2 1 bank2 -
@@ -381,10 +384,10 @@ __Lsfr7 0 0 ABS 0 sfr7 -
 __Lsfr8 0 0 ABS 0 sfr8 -
 __Lsfr9 0 0 ABS 0 sfr9 -
 __Ltext 0 0 ABS 0 text -
-__pstringtext1 306 0 STRCODE 0 stringtext1 dist/default/production\business_card.X.production.obj
-__pstringtext2 356 0 STRCODE 0 stringtext2 dist/default/production\business_card.X.production.obj
-__pstringtext3 320 0 STRCODE 0 stringtext3 dist/default/production\business_card.X.production.obj
-__pstringtext4 336 0 STRCODE 0 stringtext4 dist/default/production\business_card.X.production.obj
+__pstringtext1 316 0 STRCODE 0 stringtext1 dist/default/production\business_card.X.production.obj
+__pstringtext2 366 0 STRCODE 0 stringtext2 dist/default/production\business_card.X.production.obj
+__pstringtext3 330 0 STRCODE 0 stringtext3 dist/default/production\business_card.X.production.obj
+__pstringtext4 346 0 STRCODE 0 stringtext4 dist/default/production\business_card.X.production.obj
 __LcstackBANK0 0 0 ABS 0 cstackBANK0 -
 int$flags 7E 0 ABS 0 - dist/default/production\business_card.X.production.obj
 __HcstackCOMMON 0 0 ABS 0 cstackCOMMON -
@@ -393,16 +396,16 @@ __S1 7B 0 ABS 0 - -
 __S2 0 0 ABS 0 - -
 __S3 0 0 ABS 0 - -
 _isr 8 0 CODE 0 intentry dist/default/production\business_card.X.production.obj
-displayNumber@pinLow 320 0 STRCODE 0 stringtext3 dist/default/production\business_card.X.production.obj
+displayNumber@pinLow 330 0 STRCODE 0 stringtext3 dist/default/production\business_card.X.production.obj
 _newPeriod 32 0 BANK0 1 dataBANK0 dist/default/production\business_card.X.production.obj
 __HidataCOMMON 0 0 ABS 0 idataCOMMON -
 __end_of_isr C4 0 CODE 0 intentry dist/default/production\business_card.X.production.obj
-displayNumber@pinHigh 336 0 STRCODE 0 stringtext4 dist/default/production\business_card.X.production.obj
+displayNumber@pinHigh 346 0 STRCODE 0 stringtext4 dist/default/production\business_card.X.production.obj
 __Lintentry 8 0 CODE 0 intentry -
-reset_vec 0 0 CODE 0 reset_vec C:\Users\jonno\AppData\Local\Temp\snf0.obj
+reset_vec 0 0 CODE 0 reset_vec C:\Users\JOSHJO~1\AppData\Local\Temp\svc8.obj
 __pdataBANK0 31 0 BANK0 1 dataBANK0 dist/default/production\business_card.X.production.obj
 __LbssBANK0 0 0 ABS 0 bssBANK0 -
-_displayNumber 290 0 CODE 0 text1 dist/default/production\business_card.X.production.obj
+_displayNumber 28E 0 CODE 0 text1 dist/default/production\business_card.X.production.obj
 __Lstringtext1 0 0 ABS 0 stringtext1 -
 __Lstringtext2 0 0 ABS 0 stringtext2 -
 __Lstringtext3 0 0 ABS 0 stringtext3 -
@@ -443,10 +446,10 @@ __Lconfig 1000E 0 CONFIG 0 config -
 __CFG_WDTE$OFF 0 0 ABS 0 - dist/default/production\business_card.X.production.obj
 main@bitOn 25 0 BANK0 1 cstackBANK0 dist/default/production\business_card.X.production.obj
 main@index 2A 0 BANK0 1 cstackBANK0 dist/default/production\business_card.X.production.obj
-stackhi 206F 0 ABS 0 - C:\Users\jonno\AppData\Local\Temp\snf0.obj
-stacklo 2013 0 ABS 0 - C:\Users\jonno\AppData\Local\Temp\snf0.obj
+stackhi 206F 0 ABS 0 - C:\Users\JOSHJO~1\AppData\Local\Temp\svc8.obj
+stacklo 2013 0 ABS 0 - C:\Users\JOSHJO~1\AppData\Local\Temp\svc8.obj
 __CFG_LVP$OFF 0 0 ABS 0 - dist/default/production\business_card.X.production.obj
-__end_ofdisplayNumber@pinLow 336 0 STRCODE 0 stringtext3 dist/default/production\business_card.X.production.obj
+__end_ofdisplayNumber@pinLow 346 0 STRCODE 0 stringtext3 dist/default/production\business_card.X.production.obj
 __Lspace_0 0 0 ABS 0 - -
 __Lspace_1 0 0 ABS 0 - -
 __Lspace_2 0 0 ABS 0 - -
@@ -463,8 +466,8 @@ __Lstrings 0 0 ABS 0 strings -
 __Hreset_vec 2 0 CODE 0 reset_vec -
 __HbssBANK0 0 0 ABS 0 bssBANK0 -
 _sampleButton 78 0 COMMON 1 dataCOMMON dist/default/production\business_card.X.production.obj
-__ptext1 290 0 CODE 0 text1 dist/default/production\business_card.X.production.obj
-__end_ofmain@timingPeriods 320 0 STRCODE 0 stringtext1 dist/default/production\business_card.X.production.obj
+__ptext1 28E 0 CODE 0 text1 dist/default/production\business_card.X.production.obj
+__end_ofmain@timingPeriods 330 0 STRCODE 0 stringtext1 dist/default/production\business_card.X.production.obj
 __size_of_displayNumber 0 0 ABS 0 - dist/default/production\business_card.X.production.obj
 displayNumber@i 74 0 COMMON 1 cstackCOMMON dist/default/production\business_card.X.production.obj
 __Lpowerup 0 0 CODE 0 powerup -
@@ -476,12 +479,12 @@ __Hstringtext3 0 0 ABS 0 stringtext3 -
 __Hstringtext4 0 0 ABS 0 stringtext4 -
 __end_of__initialization E4 0 CODE 0 cinit dist/default/production\business_card.X.production.obj
 __Lfunctab 0 0 ENTRY 0 functab -
-__pidataBANK0 352 0 CODE 0 idataBANK0 dist/default/production\business_card.X.production.obj
+__pidataBANK0 362 0 CODE 0 idataBANK0 dist/default/production\business_card.X.production.obj
 __Lclrtext 0 0 ABS 0 clrtext -
-__end_of_displayNumber 306 0 CODE 0 text1 dist/default/production\business_card.X.production.obj
+__end_of_displayNumber 316 0 CODE 0 text1 dist/default/production\business_card.X.production.obj
 __pcstackCOMMON 70 0 COMMON 1 cstackCOMMON dist/default/production\business_card.X.production.obj
 __Hend_init C6 0 CODE 0 end_init -
-__end_of_main 290 0 CODE 0 maintext dist/default/production\business_card.X.production.obj
+__end_of_main 28E 0 CODE 0 maintext dist/default/production\business_card.X.production.obj
 _PORTA C 0 ABS 0 - dist/default/production\business_card.X.production.obj
 _TRISA 8C 0 ABS 0 - dist/default/production\business_card.X.production.obj
 _main$216 26 0 BANK0 1 cstackBANK0 dist/default/production\business_card.X.production.obj
@@ -494,7 +497,7 @@ __HdataBANK0 0 0 ABS 0 dataBANK0 -
 __initialization C6 0 CODE 0 cinit dist/default/production\business_card.X.production.obj
 __pbssBANK0 2F 0 BANK0 1 bssBANK0 dist/default/production\business_card.X.production.obj
 __pdataCOMMON 78 0 COMMON 1 dataCOMMON dist/default/production\business_card.X.production.obj
-main@timingPeriods 306 0 STRCODE 0 stringtext1 dist/default/production\business_card.X.production.obj
+main@timingPeriods 316 0 STRCODE 0 stringtext1 dist/default/production\business_card.X.production.obj
 _countUp 79 0 COMMON 1 dataCOMMON dist/default/production\business_card.X.production.obj
 # %SPLITSTAB Section
 # This section enumerates all the psect splits performed by the assembler.
@@ -521,11 +524,11 @@ _countUp 79 0 COMMON 1 dataCOMMON dist/default/production\business_card.X.produc
 # and size are in units of delta. The file address is in units of bytes.
 # All other numeric quantities are in decimal.
 %SEGMENTS
-idataCOMMON 0 1A6 34C 5 2
+idataCOMMON 0 1AE 35C 5 2
 cstackCOMMON 1 70 70 B 1
 cstackBANK0 1 20 20 13 1
-stringtext1 0 183 306 23 2
-stringtext2 0 1AB 356 1 2
-intentry 0 4 8 17F 2
+stringtext1 0 18B 316 23 2
+stringtext2 0 1B3 366 1 2
+intentry 0 4 8 187 2
 reset_vec 0 0 0 1 2
 config 0 8007 1000E 2 2

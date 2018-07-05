@@ -2932,9 +2932,10 @@ number++;
 }
 
 if (!count) period = newPeriod;
+
 count++;
 
-# 56
+# 57
 sampleButton ^= 1;
 
 if (sampleButton)
@@ -2950,14 +2951,13 @@ if (!PORTAbits.RA4) buttonCountB = 0;
 
 (buttonCountA > buttonSampleThresh) ? buttonA = 1 : buttonA = 0;
 (buttonCountB > buttonSampleThresh) ? buttonB = 1 : buttonB = 0;
-
 }
 }
 }
 
 
 
-void displayNumber(unsigned char i)
+void displayNumber(signed char i)
 {
 
 
@@ -2967,10 +2967,16 @@ static const unsigned char pinLow[11] = {1,0,2,1,5,2,5,1,2,0,0};
 
 TRISA = 0xFF & ~(1<<pinLow[i]|1<<pinHigh[i]);
 PORTA = 0 | (1<<pinHigh[i]);
-_delay((unsigned long)((200)*(8000000/4000000.0)));
+_delay((unsigned long)((600)*(8000000/4000000.0)));
+
+TRISA = (1<<3)|(1<<4);
+PORTA = 0;
+_delay((unsigned long)((100)*(8000000/4000000.0)));
+
 }
 
-void main() {
+void main()
+{
 
 
 OSCCON = 0b11110000;
@@ -3004,7 +3010,7 @@ unsigned char buttonReleasedB = 0;
 while(1)
 {
 
-# 130
+# 135
 (buttonPrevA == 1 && buttonA == 0) ? buttonPressedA = 1 : buttonPressedA = 0;
 (buttonPrevB == 1 && buttonB == 0) ? buttonPressedB = 1 : buttonPressedB = 0;
 
@@ -3045,8 +3051,8 @@ newPeriod = timingPeriods[index];
 dispNumber = number;
 }
 
-# 174
-for(unsigned char i = 0; i <= 7; i++)
+# 179
+for(signed char i = 7; i >= 0; i--)
 {
 unsigned char bitOn = (unsigned char) ((dispNumber >> i) & 1);
 (bitOn) ? displayNumber(i) : displayNumber(10);

@@ -75,7 +75,7 @@ if(T0IE && T0IF)
 
 // Function to set GPIO correctly to light individual LED's on board as they are charlieplexed
 // Takes in index of LED (0 through 9 + 10(zero)) according to   
-void displayNumber(unsigned char i)
+void displayNumber(signed char i)
 {
   // Gives the RAx number to set high/low for each of the LED's
   // In order: 1 2 4 8 16 32 64 128 Single Clocked OFF
@@ -85,7 +85,13 @@ void displayNumber(unsigned char i)
 
   TRISA = 0xFF & ~(1<<pinLow[i]|1<<pinHigh[i]); // All GPIO except the two for each diode need to be tristated
   PORTA = 0 | (1<<pinHigh[i]);                  // All GPIO are low except the one on anode side of diode
-  __delay_us(200);                              // Wait before toggling to next LED - could use an interrupt but not needed in this case
+  __delay_us(600);                              // Wait before toggling to next LED - could use an interrupt but not needed in this case
+  
+  // Below is used to decrease the time LED's are high to decrease ghosting
+  TRISA = (1<<3)|(1<<4);                        // RA3, RA4 Input, others output
+  PORTA = 0;                                    // All GPIO are low
+  __delay_us(100);                             
+  
 }
 
 void main() 
@@ -96,11 +102,11 @@ void main()
   ANSELA = 0;             // All I/O pins are configured as digital
   ADCON0 = 0;             // Disable ADC module
   TRISA = (1<<3)|(1<<4);  // RA3, RA4 Input, others output
-  PORTA = 0;              // PORTA initially all low
+  PORTA = 0;              // PORTA init all low
   WPUA = 0;               // Disable pullup resistors
 
   // Setup TIMER0
-  OPTION_REG = 0b10000110;    // Weak pull-ups disabled, Timer0 Prescaler 1:128 
+  OPTION_REG = 0b10000110;    // Weak pull-ups disabled, Timer0 prescaler 1:128 
   INTCON = 0b10100000;        // Global Interrupt Enabled and TMR0 Overflow Interrupt Enabled 
   
   // Array to store the time periods which will be used in clocked mode
@@ -171,7 +177,7 @@ void main()
     //                   Display the number                  //
     ///////////////////////////////////////////////////////////   
     // Loop over the LED's and check if they need to be lit          
-    for(unsigned char i = 0; i <= 7; i++)
+    for(signed char i = 7; i >= 0; i--)
     {
         unsigned char bitOn = (unsigned char) ((dispNumber >> i) & 1); // Returns 1 if bit is required to display number
         (bitOn) ? displayNumber(i) : displayNumber(10); // Display the bit if set, otherwise display nothing (10 is all off)         
