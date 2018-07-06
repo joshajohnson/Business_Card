@@ -11,11 +11,11 @@
 [v _eecpymem eecpymem `(v  1 e 1 0 ]
 "39
 [v _memcpyee memcpyee `(v  1 e 1 0 ]
-"27 C:\Users\Josh Johnson\Dropbox\Projects\Business_Card\business_card.X\main.c
+"27 C:\Users\jonno\Dropbox\Projects\Business_Card\business_card.X\main.c
 [v _isr isr `II(v  1 e 1 0 ]
 "78
 [v _displayNumber displayNumber `(v  1 e 1 0 ]
-"96
+"97
 [v _main main `(v  1 e 1 0 ]
 "349 E:\XC8\include\pic12f1822.h
 [v _INTCON INTCON `VEuc  1 e 1 @11 ]
@@ -103,7 +103,7 @@
 [v _T0IE T0IE `VEb  1 e 0 @93 ]
 "5656
 [v _T0IF T0IF `VEb  1 e 0 @90 ]
-"12 C:\Users\Josh Johnson\Dropbox\Projects\Business_Card\business_card.X\main.c
+"12 C:\Users\jonno\Dropbox\Projects\Business_Card\business_card.X\main.c
 [v _period period `VEuc  1 e 1 0 ]
 "13
 [v _newPeriod newPeriod `VEuc  1 e 1 0 ]
@@ -125,36 +125,36 @@
 [v _buttonA buttonA `VEuc  1 e 1 0 ]
 "24
 [v _buttonB buttonB `VEuc  1 e 1 0 ]
-"96
+"97
 [v _main main `(v  1 e 1 0 ]
 {
-"181
+"182
 [v main@bitOn bitOn `uc  1 a 1 5 ]
-"179
+"180
 [v main@i i `c  1 a 1 12 ]
-"145
+"146
 [v main@buttonBoth buttonBoth `uc  1 a 1 4 ]
-"124
-[v main@buttonPressedB buttonPressedB `uc  1 a 1 14 ]
-"123
-[v main@buttonPressedA buttonPressedA `uc  1 a 1 13 ]
-"116
-[v main@singleStep singleStep `uc  1 a 1 11 ]
-"118
-[v main@index index `uc  1 a 1 10 ]
-"117
-[v main@dispNumber dispNumber `uc  1 a 1 9 ]
-"122
-[v main@buttonPrevB buttonPrevB `uc  1 a 1 8 ]
-"121
-[v main@buttonPrevA buttonPrevA `uc  1 a 1 7 ]
-"126
-[v main@buttonReleasedB buttonReleasedB `uc  1 a 1 3 ]
 "125
+[v main@buttonPressedB buttonPressedB `uc  1 a 1 14 ]
+"124
+[v main@buttonPressedA buttonPressedA `uc  1 a 1 13 ]
+"117
+[v main@singleStep singleStep `uc  1 a 1 11 ]
+"119
+[v main@index index `uc  1 a 1 10 ]
+"118
+[v main@dispNumber dispNumber `uc  1 a 1 9 ]
+"123
+[v main@buttonPrevB buttonPrevB `uc  1 a 1 8 ]
+"122
+[v main@buttonPrevA buttonPrevA `uc  1 a 1 7 ]
+"127
+[v main@buttonReleasedB buttonReleasedB `uc  1 a 1 3 ]
+"126
 [v main@buttonReleasedA buttonReleasedA `uc  1 a 1 2 ]
-"113
+"114
 [v main@timingPeriods timingPeriods `DC[13]uc  1 s 13 timingPeriods ]
-"187
+"188
 } 0
 "78
 [v _displayNumber displayNumber `(v  1 e 1 0 ]
@@ -167,7 +167,7 @@
 [v displayNumber@pinLow pinLow `DC[11]uc  1 s 11 pinLow ]
 "86
 [v displayNumber@i i `c  1 a 1 4 ]
-"94
+"95
 } 0
 "27
 [v _isr isr `II(v  1 e 1 0 ]
