@@ -16,7 +16,7 @@ volatile unsigned char countUp = 1;
 volatile unsigned char number = 1;
 
 // Button related variables
-volatile static const unsigned char buttonSampleThresh = 5;
+volatile const unsigned char buttonSampleThresh = 5;
 volatile unsigned char sampleButton = 1;
 volatile unsigned char buttonCountA = 0;
 volatile unsigned char buttonCountB = 0;
@@ -80,8 +80,8 @@ void displayNumber(signed char i)
   // Gives the RAx number to set high/low for each of the LED's
   // In order: 1 2 4 8 16 32 64 128 Single Clocked OFF
   // See Schematic for more info
-  static const unsigned char pinHigh[11]    = {0,1,1,2,2,5,1,5,0,2,7};
-  static const unsigned char pinLow[11]     = {1,0,2,1,5,2,5,1,2,0,0};
+  const unsigned char pinHigh[11]    = {0,1,1,2,2,5,1,5,0,2,7};
+  const unsigned char pinLow[11]     = {1,0,2,1,5,2,5,1,2,0,0};
 
   TRISA = 0xFF & ~(1<<pinLow[i]|1<<pinHigh[i]); // All GPIO except the two for each diode need to be tristated
   PORTA = 0 | (1<<pinHigh[i]);                  // All GPIO are low except the one on anode side of diode
@@ -111,7 +111,7 @@ void main()
   
   // Array to store the time periods which will be used in clocked mode
   #define TIME_ELEM 13
-  static const unsigned char timingPeriods[TIME_ELEM] = {240,120,90,70,55,40,30,25,15,7,3,1,0};
+  const unsigned char timingPeriods[TIME_ELEM] = {240,120,90,70,55,40,30,25,15,7,3,1,0};
 
   // Number display and state variables
   unsigned char singleStep = 0;  
